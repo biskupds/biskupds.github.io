@@ -659,7 +659,7 @@ input, select, textarea {
 			top: 0;
 			width: 100%;
 		}
-
+		
 		img:hover {
 			transition:transform 0.25s ease;
 			-webkit-transform:scale(1.5); /* or some other value */
