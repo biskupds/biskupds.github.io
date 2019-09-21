@@ -662,8 +662,8 @@ input, select, textarea {
 		
 		img:hover {
 			transition:transform 0.25s ease;
-			-webkit-transform:scale(1.5); /* or some other value */
-			transform:scale(1.5);
+			/*-webkit-transform:scale(1.25); /* or some other value */
+			transform:scale(1.25);
 		}
 
 		.image img {
