@@ -660,7 +660,7 @@ input, select, textarea {
 			width: 100%;
 		}
 		
-		img:hover {
+		.image:hover {
 			transition:transform 0.25s ease;
 			/*-webkit-transform:scale(1.25); /* or some other value */
 			transform:scale(1.25);
@@ -726,6 +726,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 /* List */
 
