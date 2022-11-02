@@ -57,9 +57,23 @@
 								<h3>Eco Illini Supermileage: G5e Battery Pack</h3>
 								<p>In fall 2021 I am creating a brand new battery pack for the G5e prototype vehicle of <a style="font-weight: bold;" href="https://ecoillini.mechse.illinois.edu/">Eco Illini Supermileage</a>, a Registered Student Organization at UIUC. Each year the club competes in the Shell Eco Marathon to achieve the most efficient prototype car.</p>
 								<img src="images/Projects/G5e/batterysidebyside.jpg" style = "float: left; width: 100%; border-radius: 5px; margin-bottom: 2em"/>
-								<p>While still in progress, the new pack (right) is visibly smaller than the previous generation (left), yet exhibits 25% less weight despite its 33.3% greater volumetric energy density.</p>
+								<p>The updated pack (right) is visibly smaller than the previous generation (left), yet exhibits 25% less weight despite its 33.3% greater volumetric energy density.</p>
 								<img src="images/Projects/G5e/casingCAD.png" style = "float: left; width: 100%; border-radius: 5px; margin-bottom: 2em"/>
 								<p style="margin-bottom: 5em;">The pack consists of 13 Samsung 40T 21700 lithium-ion cells in series achieving 187.2 Watt-hours of energy. The cells are packed hexagonally into a 3D-printed casing which was modeled using Fusion360 and printed in PLA.</p>
+
+								<h3>Lucid Motors: Busbar Joint Resistance Heating</h3>
+								<p>While interning with Lucid Motors, I investigated how the mechanical design of battery pack busbars can be thermally optimized.</p>
+								<h4>Temperature Approximation from Current Profile</h4>
+								<img src="images/Projects/Lucid/busbar.png" style = "float: left; width: 100%; border-radius: 5px; margin-bottom: 2em"/>
+								<p>I derived an equation relating busbar temperature and time under electrical current and used this to investigate a pracical upper-bound on busbar joint resistance. The system ignores conductive heat transfer and only considers convective heat loss, thus the predicted temperatures will be higher than observed.</p>
+								<img src="images/Projects/Lucid/current_profile.png" style = "float: left; width: 100%; border-radius: 5px"/>
+								<img src="images/Projects/Lucid/temp.png" style = "float: left; width: 100%; border-radius: 5px;margin-bottom: 2em;"/>
+								<p>Using numerical integration, a table of current vs time can be used to evaluate the change in busbar temperature associated with each time step. When applied to a known initial temperature, a plot of the busbar's temperature vs time for a given current profile can be produced.</p>
+								<h4>Range and Horsepower Losses from Joint Resistance</h4>
+								<p>I needed to investigate the extent to which the Lucid Air's performance would suffer if busbar joint resistances changed.</p>
+								<img src="images/Projects/Lucid/range_loss.png" style = "float: left; width: 100%; border-radius: 5px; margin-bottom: 2em"/>
+								<p>Once again using numerical integration, it was calculated that (at the estimated efficiency) if each high voltage joint in the pack had an increase in resistance of 30&mu;&Omega;, the entire pack would exhibit a decrease in range of 0.00297mi/8mi = 0.033%.</p>
+								<p style = "margin-bottom: 5em;">As for peak horsepower, the loss in power from the increase in resistance can be calculated from an assumed max current of 1200 Amps. The power dissipation is simply the square of the peak current multiplied by the increase in resistance, which totaled to 3.682 horsepower. It was evident from this analysis that most of the resistance of the pack comes from the battery cells themselves, and that most high voltage busbars in the pack are already quite robust from a performance standpoint.</p>
 
 								<h3>The FishCraft</h3>
 								<p>At Rose-Hulman Institute of Technology's Operation Catapult summer program, I built a radio controlled hovercraft using hobbyist RC parts and some basic materials. Our team built a poster showcasing our work:</p>
@@ -90,7 +104,7 @@
 								<img src="images/Projects/GaTech Project Photos/mousetwo1.jpg" style="float: left; width: 30%; margin-right: 5%; margin-bottom: 2em;">
 								<img src="images/Projects/GaTech Project Photos/mousetwo2.jpg" style="float: left; width: 30%; margin-right: 5%; margin-bottom: 2em;">
 								<img src="images/Projects/GaTech Project Photos/mousetwo3.jpg" style="float: left; width: 30%; margin-right: 0%; margin-bottom: 2em;">
-								</div>
+									</div>
 
 								<h4>Mark III: Comfort and Freedom</h4>
 								<div class="image">
