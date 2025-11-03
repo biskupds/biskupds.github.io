@@ -46,11 +46,10 @@
 			<ul class="icons">
 				<li><a href="https://www.linkedin.com/in/darren-biskup-089510163/" class="icon brands fa-linkedin"><span
 							class="label">Linkedin</span></a></li>
+				<li><a href="https://github.com/darrenbiskupphd" class="icon brands fa-github"><span
+							class="label">Github</span></a></li>
 			</ul>
 		</header>
-		<footer>
-		  <small>Created from the <a href="https://html5up.net/dimension" target="_blank" rel="noopener noreferrer">Dimension</a> template by HTML5 UP</small>
-		</footer>
 
 		<!-- Main -->
 		<div id="main">
@@ -61,11 +60,13 @@
 
 				<h2>Engineering</h2>
 				<p style="margin-bottom: 2.5em;">
-                    I recently graduated from UIUC and am now continuing to pursue robotics research as an MS/PhD student in Mechanical 
-                    Engineering at Columbia University. My passion is controlling robot movement, with current interests in both classical control systems and data-driven approaches.
-                </p>
+					I recently graduated from UIUC and am now continuing to pursue robotics research as a PhD
+					student in Mechanical
+					Engineering at Columbia University. My passion is controlling robot movement, with current interests
+					in both classical control systems and data-driven approaches.
+				</p>
 
-				<h3>Undergraduate Research: Robotic Soft Actuators</h3>
+				<h3>Undergraduate Research: Soft Robotic Actuators</h3>
 				<p>In my undergraduate research lab, I worked on a robotic octopus arm, constructed by
 					conjoining three silicone rubber tubes each with fibers wound at a particular angle. I can control
 					the arm's movements by adjusting the pressure within these tubes, allowing it to be positioned in
@@ -81,10 +82,8 @@
 				</div>
 				<p>The group's objective is to create a mathematical model of the robotic octopus arm, which can then be
 					used to predict the arm's pose based on a new set of input pressures. To record the
-					arm's movements, we use 4-5 action cameras strategically positioned around it, capturing its motion
-					with the help of tracking markers attached along its length. We utilize computer vision to extract
-					the 2D pixel coordinates of the tracking markers, then apply the Direct Linear
-					Transformation (DLT) to convert these coordinates into real-world 3D positions.
+					arm's movements, we use 4-5 RGB cameras to capture its motion from tracking markers attached along its length. A computer vision script extracts
+					the 2D pixel coordinates of the tracking markers, then applies a coordinate transformation using calibrated camera parameters to convert these coordinates into real-world 3D positions.
 				</p>
 				<div class="slider-wrapper" style="margin-bottom: 2em;">
 					<div class="slider">
@@ -101,11 +100,9 @@
 						<a href="#slide3"></a>
 					</div>
 				</div>
-				<p>As part of the DLT process, we conduct calibration by moving a precise grid of known dimensions
-					within the experiment zone, allowing the cameras to capture a perfect 3D grid of
-					coordinates. I laser-cut a clear acrylic board and applied green acrylic paint to create the grid.
-					Subsequently, I wrote a program utilizing OpenCV
-					and scikit-image within python to isolate and retrieve the centroids (in pixel
+				<p>As part of the camera calibration, we move a precise grid of known dimensions
+					within the experiment workspace, allowing the cameras to capture a dense 3D grid. I laser-cut a clear acrylic board and applied green acrylic paint to create the grid.
+					Then using OpenCV and scikit-image a script I wrote isolates and retrieves the centroids (in pixel
 					coordinates) of the green dots.
 				</p>
 				<iframe lazy width="560" height="560" src="https://www.youtube.com/embed/sVHL5_erQpE"
@@ -127,9 +124,9 @@
 					guided only by 3 IR sensors. It
 					uses an MPU-9250 IMU for acceleration and gyroscope data and rotary encoder feedback from the DC
 					drive motors to maintain balance throughout its pathing.</p>
-				<iframe lazy width="560" height="560" src="https://www.youtube.com/embed/iW54wzJ_1JM?si=8Dl8MEQki_ebfR5J"
-					title="YouTube video player" frameborder="0"
-					style="float: left; width: 100%; border-radius: 5px; margin-bottom: 2em"
+				<iframe lazy width="560" height="560"
+					src="https://www.youtube.com/embed/iW54wzJ_1JM?si=8Dl8MEQki_ebfR5J" title="YouTube video player"
+					frameborder="0" style="float: left; width: 100%; border-radius: 5px; margin-bottom: 2em"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					allowfullscreen></iframe>
 				<p> The robot operates in three distinct movement modes: maze traversal mode, turning mode, and linear
@@ -143,7 +140,7 @@
 					starting with the leftmost branch. If the left branch reaches a dead-end or has been fully searched,
 					the robot returns to the junction, reorients forward, and proceeds down the next unexplored path.
 					This continues until sensing no walls on all 3 IR sensors, indicating the goal is reached.</p>
-				<img lazy class= "zoom-without-container" src="images/Projects/ME461/segbot1.avif"
+				<img lazy class="zoom-without-container" src="images/Projects/ME461/segbot1.avif"
 					style="display: block; margin: 0 auto; width: 50%; border-radius: 5px;" />
 
 
@@ -163,7 +160,7 @@
 					achieving 187.2 Watt-hours of energy. The cells are packed hexagonally into a 3D-printed casing
 					which was modeled using Fusion360 and printed in PLA.</p>
 
-				 <!--
+				<!--
 				<h2>Industrial Design</h2>
 				<p style="margin-bottom: 2.5em">I discovered a passion for Industrial Design while experimenting with
 					foam prototypes. Crafting ideas and bringing them to life via tactile means allows me to transform
@@ -213,7 +210,7 @@
 					clothing such as hoodies and thicker jackets. In order to bear heavier loads, a proper locking
 					mechanism may be necessary.</p>
 				-->
-				
+
 				<hr>
 			</article>
 
@@ -254,20 +251,20 @@
 				<hr>
 				<h2>Watercolor</h2>
 
-                <h3 class="major">Elephant</h3>
-                <div lazy class="image" style="text-align: center;">
-                    <img src="images/Art/elephant.jpeg" style="width: 100%; margin-bottom: 2em;" />
-                </div>
+				<h3 class="major">Elephant</h3>
+				<div lazy class="image" style="text-align: center;">
+					<img src="images/Art/elephant.jpeg" style="width: 100%; margin-bottom: 2em;" />
+				</div>
 
-                <h3 class="major">The Thinker</h3>
-                <div lazy class="image" style="text-align: center;">
-                    <img src="images/Art/man.jpeg" style="width: 70%; margin: 0 auto 5em auto;">
-                </div>
+				<h3 class="major">The Thinker</h3>
+				<div lazy class="image" style="text-align: center;">
+					<img src="images/Art/man.jpeg" style="width: 70%; margin: 0 auto 5em auto;">
+				</div>
 
-                <h3 class="major">Quiet Nook</h3>
-                <div lazy class="image" style="text-align: center;">
-                    <img src="images/Art/plants.jpeg" style="width: 70%; margin: 0 auto 5em auto;">
-                </div>
+				<h3 class="major">Quiet Nook</h3>
+				<div lazy class="image" style="text-align: center;">
+					<img src="images/Art/plants.jpeg" style="width: 70%; margin: 0 auto 5em auto;">
+				</div>
 			</article>
 
 			<!-- Music -->
@@ -331,7 +328,8 @@
 				<h3> ME470 Senior Design Trade Show </h3>
 				<img class="zoom-without-container" src="images/Posters/MOPASS Poster.png"
 					style="float: left; width: 100%; border-radius: 5px;" />
-				<p style="text-align: center; margin-bottom: 4em"> <i>11/14/23 - Minimally Invasive Surgical Tunneling Device </i> </p>
+				<p style="text-align: center; margin-bottom: 4em"> <i>11/14/23 - Minimally Invasive Surgical Tunneling
+						Device </i> </p>
 
 				<hr>
 			</article>
@@ -361,7 +359,7 @@
 						iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem
 						ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
 					<h4>Preformatted</h4>
-                    <pre><code>i = 0;
+					<pre><code>i = 0;
                     while (!deck.isInOrder()) {
                         print 'Iteration ' + i;
                         deck.shuffle();
@@ -590,7 +588,10 @@
 
 		<!-- Footer -->
 		<footer id="footer">
-
+			<!-- 
+			<small>Created from the <a href="https://html5up.net/dimension" target="_blank"
+					rel="noopener noreferrer">Dimension</a> template by HTML5 UP</small> 
+			-->
 		</footer>
 
 	</div>
