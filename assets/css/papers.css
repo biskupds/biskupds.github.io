@@ -1,0 +1,102 @@
+/* Papers: scoped overrides for the Dimension theme. */
+
+#main article#papers {
+	width: 44rem;
+	padding-top: 3.25rem;
+	padding-bottom: 1.25rem;
+}
+
+#papers .major {
+	max-width: 100%;
+	margin-bottom: 1.25rem;
+	letter-spacing: 0.2rem;
+}
+
+#papers .papers-featured {
+	display: grid;
+	grid-template-columns: 10rem minmax(0, 1fr);
+	align-items: start;
+	gap: 0.9rem;
+	margin-bottom: 1rem;
+}
+
+#papers .papers-thumbnail {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+
+#papers .papers-title {
+	margin: 0 0 0.35rem;
+	font-size: 1.05rem;
+	line-height: 1.35;
+	letter-spacing: normal;
+	text-transform: none;
+}
+
+#papers .papers-authors,
+#papers .papers-venue,
+#papers .papers-links {
+	margin: 0 0 0.25rem;
+	font-size: 0.95rem;
+	line-height: 1.5;
+}
+
+#papers .papers-venue {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+#papers .papers-links {
+	margin: 0.5rem 0 0;
+}
+
+#papers .papers-group-title {
+	margin: 0 0 0.75rem;
+	padding-top: 0.75rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.25);
+	font-size: 0.95rem;
+	letter-spacing: 0.15rem;
+}
+
+#papers .papers-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#papers .papers-list li {
+	padding: 0;
+	margin-bottom: 1.1rem;
+}
+
+#papers a:focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: 4px;
+}
+
+@media screen and (max-width: 736px) {
+	#main article#papers {
+		padding-top: 2.75rem;
+		padding-bottom: 0.75rem;
+	}
+
+	#papers .papers-featured {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 0.5rem;
+	}
+
+	#papers .papers-thumbnail {
+		width: 100%;
+		max-width: 10rem;
+		justify-self: start;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#personal .major {
+		width: fit-content;
+		max-width: 100%;
+		overflow-wrap: anywhere;
+	}
+}
