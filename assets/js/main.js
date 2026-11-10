@@ -24,8 +24,8 @@
 			xxsmall:  [ null,      '360px'  ]
 		});
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
+	// Reveal navigation when the DOM is ready, without waiting for media.
+		$(function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
@@ -397,7 +397,7 @@
 			// Initial article.
 				if (location.hash != ''
 				&&	location.hash != '#')
-					$window.on('load', function() {
+					$(function() {
 						$main._show(location.hash.substr(1), true);
 					});
 
